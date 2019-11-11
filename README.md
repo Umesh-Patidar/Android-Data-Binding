@@ -1,4 +1,4 @@
-# Android Data Binding
+# Android Data Binding [One way]
 
 # Overview
 
