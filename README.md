@@ -36,6 +36,36 @@ For example, the binding variables that can be used in expressions are defined i
 </layout>
 ```
 
+# Data binding for events via listener
+
+Events may be bound to handler methods directly, similar to the way android:onClick can be assigned to a method in the activity. Event attribute names are governed by the name of the listener method with a few exceptions. For example, View.OnLongClickListener has a method onLongClick(), so the attribute for this event is android:onLongClick.
+
+To assign an event to its handler, use a normal binding expression, with the value being the method name to call. The binding expression can assign the click listener for a View.
+
+
+```
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="itemClickListener"
+            type="com.databinding.custom.CustomClickListener" />
+    </data>
+    <ConstraintLayout... /> 
+</layout>
+```
+# Attached listener in layout
+
+```
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="@{() -> itemClickListener.cardClicked(dataModel)}"
+app:cardUseCompatPadding="true">
+
+</androidx.cardview.widget.CardView>
+```
 
 # End Result
 ![Optional Text](../master/data_binding.gif)
