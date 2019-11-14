@@ -6,13 +6,15 @@ Android has now released a stable data-binding library which allows you to conne
 
 
 # Setup
+To enable the usage of data binding in your Android application, add the following snippet to the app/build.gradle file.
+
 ```
  android {
      dataBinding.enabled = true
      }
 ```
 
-# Binding data:
+# Binding data
 
 A binding class is generated for each layout file. By default, the name of the class is based on the name of the layout file, converting it to Pascal case and adding the Binding suffix to it. The above layout filename is **activity_main.xml** so the corresponding generated class is **ActivityMainBinding**.
 
