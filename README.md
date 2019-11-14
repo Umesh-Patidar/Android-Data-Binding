@@ -62,7 +62,7 @@ To assign an event to its handler, use a normal binding expression, with the val
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:onClick="@{() -> itemClickListener.cardClicked(dataModel)}"
-app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true">
 
 </androidx.cardview.widget.CardView>
 ```
