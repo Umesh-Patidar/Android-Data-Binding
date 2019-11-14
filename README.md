@@ -35,6 +35,7 @@ For example, the binding variables that can be used in expressions are defined i
     <ConstraintLayout... /> 
 </layout>
 ```
+The usage of data binding requires changes in your layout files. Such layout files starts with a **layout** root tag followed by a **data** element and a **view root element**. The **data** elements describe data which is available for binding. This view element contains your root hierarchy similar to layout files which are not used with data binding. References to the data elements or expressions within the layout are written in the attribute properties using the **@{} or @={}**.
 
 # Data binding for events via listener
 
