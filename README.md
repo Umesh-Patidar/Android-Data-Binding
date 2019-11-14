@@ -55,7 +55,12 @@ To assign an event to its handler, use a normal binding expression, with the val
 </layout>
 ```
 # Attached listener in layout
+you can bind the listener using below tag.
 
+```
+android:onClick="@{() -> itemClickListener.cardClicked(dataModel)}"
+```
+> Example:
 ```
 <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
