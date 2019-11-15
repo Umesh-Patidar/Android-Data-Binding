@@ -2,7 +2,7 @@
 
 # Overview
 
-Android has now released a stable data-binding library which allows you to connect views with data in a much more powerful way than was possible  previously. Applying data binding can improve your app by removing boilerplate for data-driven UI and allowing for two-way binding between views and data objects.
+Android has now released a stable data-binding library which allows you to connect views with data in a much more powerful way than was possible  previously. Applying data binding can improve your app by removing boilerplate for data-driven UI and allowing for two-way binding between views and data objects. This provides a way to tie the UI with business logic allowing the UI values to update automatically without manual intervention. This reduces lot of boilerplate code in your business logic that you usually write to sync the UI when new data is available. DataBinding is one of the android architecture components suggested by android
 
 
 # Setup
