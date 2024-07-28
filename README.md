@@ -74,4 +74,4 @@ android:onClick="@{() -> itemClickListener.cardClicked(dataModel)}"
 ```
 
 # End Result
-<img src="../master/data_binding.gif" width="200" height="400")
+<img src="https://github.com/Umesh-Patidar/Android-Data-Binding/blob/master/data_binding.gif)" width="200" height="400")
