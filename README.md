@@ -74,4 +74,4 @@ android:onClick="@{() -> itemClickListener.cardClicked(dataModel)}"
 ```
 
 # End Result
-![Optional Text](../master/data_binding.gif)
+<img src="../master/data_binding.gif" width="200" height="400")
